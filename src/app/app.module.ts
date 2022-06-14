@@ -11,13 +11,21 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage'
 import { AngularFireAuthModule } from '@angular/fire/compat/auth'
-import { environment } from '../environments/environment'
+import { environment } from '../environments/environment';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component'
 @NgModule({
   declarations: [
     AppComponent,
     TutorialListComponent,
     AddTutorialComponent,
-    TutorialDetailsComponent
+    TutorialDetailsComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
